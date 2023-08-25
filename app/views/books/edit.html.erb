@@ -1,0 +1,12 @@
+<h1 class="text-center text-muted">
+  Editing book
+</h1>
+
+<%= render "form", book: @book %>
+
+<br>
+
+<div class="btn-group">
+  <%= link_to "Show this book", @book, class: 'btn btn-sm btn-outline-primary' %>
+  <%= link_to "Back to books", books_path, class: 'btn btn-sm btn-outline-secondary' %>
+</div>

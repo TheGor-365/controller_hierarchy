@@ -1,0 +1,11 @@
+<p style="color: green">
+  <%= notice %>
+</p>
+
+<%= render @user %>
+
+<div class="btn-group">
+  <%= link_to "Edit this user", edit_user_path(@user), class: 'btn btn-sm btn-outline-warning' %>
+  <%= link_to "Back to users", users_path, class: 'btn btn-sm btn-outline-secondary' %>
+  <%= button_to "Destroy this user", @user, method: :delete, class: 'btn btn-sm btn-outline-danger' %>
+</div>
