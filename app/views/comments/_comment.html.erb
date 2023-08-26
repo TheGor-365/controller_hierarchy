@@ -1,0 +1,27 @@
+<div id="<%= dom_id comment %>" class="border rounded my-5 p-5">
+  <div class="row">
+    <div class="col-1">
+      <p class="text-muted">
+        Body
+      </p>
+      <p class="text-muted">
+        User
+      </p>
+      <p class="text-muted">
+        Book
+      </p>
+    </div>
+
+    <div class="col">
+      <p class="text-success">
+        <%= comment.body %>
+      </p>
+      <p class="text-success">
+        <%= comment.user.name %>
+      </p>
+      <p class="text-success">
+        <%= comment.book.title %>
+      </p>
+    </div>
+  </div>
+</div>

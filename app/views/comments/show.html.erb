@@ -1,0 +1,11 @@
+<p style="color: green">
+  <%= notice %>
+</p>
+
+<%= render @comment %>
+
+<div class="btn-group">
+  <%= link_to "Edit this comment", edit_comment_path(@comment), class: 'btn btn-sm btn-outline-warning' %>
+  <%= link_to "Back to comments", comments_path, class: 'btn btn-sm btn-outline-secondary' %>
+  <%= button_to "Destroy this comment", @comment, method: :delete, class: 'btn btn-sm btn-outline-danger' %>
+</div>

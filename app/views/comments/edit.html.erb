@@ -1,0 +1,12 @@
+<h1 class="text-center text-muted">
+  Editing comment
+</h1>
+
+<%= render "form", comment: @comment %>
+
+<br>
+
+<div class="btn-group">
+  <%= link_to "Show this comment", @comment, class: 'btn btn-sm btn-outline-primary' %>
+  <%= link_to "Back to comments", comments_path, class: 'btn btn-sm btn-outline-secondary' %>
+</div>
