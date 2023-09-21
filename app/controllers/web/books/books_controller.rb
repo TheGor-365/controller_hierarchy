@@ -21,7 +21,7 @@ module Web::Books
 
       respond_to do |format|
         if @book.save
-          format.html { redirect_to book_url(@book), notice: "Book was successfully created." }
+          format.html { redirect_to root_path, notice: "Book was successfully created." }
         else
           format.html { render :new, status: :unprocessable_entity }
         end

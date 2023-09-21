@@ -3,7 +3,7 @@ module Web::Users
     before_action :set_book, only: %i[ show edit update destroy ]
 
     def index
-      @books = Book.where(user_id:  @user.id).all
+      @books = Book.all
     end
 
     def show
@@ -21,7 +21,7 @@ module Web::Users
 
       respond_to do |format|
         if @book.save
-          format.html { redirect_to book_url(@book), notice: "Book was successfully created." }
+          format.html { redirect_to root_path, notice: "Book was successfully created." }
         else
           format.html { render :new, status: :unprocessable_entity }
         end

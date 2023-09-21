@@ -1,6 +1,6 @@
 module Web
   module Books
-    class CommentsController < Web::BooksController
+    class CommentsController < BooksController
     end
   end
 end
